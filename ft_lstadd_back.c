@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 11:38:07 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/05/22 10:58:21 by jpizarro         ###   ########.fr       */
+/*   Updated: 2020/05/25 18:03:42 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list	*aux;
 
 	if (!new)
-		return (NULL);
+		return ;
 	else if (!*lst)
 		*lst = new;
 	else

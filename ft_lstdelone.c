@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 13:13:37 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/05/22 13:14:00 by jpizarro         ###   ########.fr       */
+/*   Updated: 2020/05/25 18:02:37 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (!lst || !del)
-		return (NULL);
+		return ;
 	del(lst->content);
 	free(lst);
 }

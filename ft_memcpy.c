@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpizarro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 17:14:28 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/02/05 19:24:24 by jpizarro         ###   ########.fr       */
+/*   Updated: 2020/05/25 17:18:24 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	if (dst == src || !n)
 		return (dst);
-	if (dst != '\0' || src != '\0')
+	if (dst || src)
 	{
 		s = src;
 		d = dst;

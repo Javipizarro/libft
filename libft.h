@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/11 00:53:22 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/05/22 13:17:21 by jpizarro         ###   ########.fr       */
+/*   Updated: 2020/06/02 06:08:46 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ int					ft_isprint(int c);
 int					ft_isspace(int c);
 int					ft_isupper(int c);
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int n, char *base);
+char				*ft_litoa_base(long int n, char *base);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_lstclear(t_list **lst, void (*del)(void*));
@@ -73,6 +75,7 @@ char				*ft_strrchr(const char *s, int c);
 char				*ft_strtrim(char const *s1, char const *set);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+char				*ft_uitoa(unsigned int n);
 size_t				ft_wordcount(const char *s, char c);
 
 #endif
