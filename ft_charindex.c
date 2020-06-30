@@ -1,38 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_charindex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/26 14:41:59 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/06/24 20:15:34 by jpizarro         ###   ########.fr       */
+/*   Created: 2020/06/07 20:13:01 by jpizarro          #+#    #+#             */
+/*   Updated: 2020/06/07 20:19:19 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-**	Converts the initial portion of the string 'str' to int representation.
-*/
-
 #include "libft.h"
 
-int		ft_atoi(char const *str)
-{
-	int	sol;
-	int	sig;
+/*
+**	Finds the first ocurrence of the character 'c' in the string 'str'.
+**	Returns the index of 'c' in "str", or -1 if 'c' is not found.
+*/
 
-	sol = 0;
-	sig = -1;
-	while (ft_isspace(*str))
-		str++;
-	if (*str == '+' || *str == '-')
-		if (*str++ == '-')
-			sig = 1;
-	while (*str >= '0' && *str <= '9')
-	{
-		sol = (*str++ - '0') * -1 + sol * 10;
-		if (sol > 0)
-			return (sig < 0 ? -1 : 0);
-	}
-	return (sol *= sig);
+int		ft_charindex(char const *s, char c)
+{
+	int i;
+
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	return (s[i] ? i : -1);
 }
