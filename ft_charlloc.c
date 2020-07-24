@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_charlloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/07 10:59:07 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/05/25 18:03:33 by jpizarro         ###   ########.fr       */
+/*   Created: 2020/07/02 06:08:15 by jpizarro          #+#    #+#             */
+/*   Updated: 2020/07/02 06:37:53 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-**	Adds the element 'new' at the beginning of the list.
+**	Allocates enough space in memory for a string 'len' chars long,
+**  The in the allocated memory, 'len' bytes are filled with the value 'c',
+**  and the last one, with the value 0.
+**  Returns a pointer to the allocated memory.
 */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	*ft_charlloc(size_t len, char c)
 {
-	if (!lst || !new)
-		return ;
-	new->next = *lst;
-	*lst = new;
+	void *s;
+
+	if (!(s = malloc(len + 1)))
+		return (NULL);
+	ft_bchar(s, len, c);
+	return (s);
 }
