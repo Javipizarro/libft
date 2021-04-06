@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpizarro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 10:22:41 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/01/30 21:23:09 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/06 09:20:10 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,28 +21,27 @@
 char	**ft_split(const char *s, char c)
 {
 	char	**mem;
-	size_t	i;
-	size_t	j;
-	size_t	k;
+	size_t	cnt[3];
 
-	if (!s || !(mem = malloc(sizeof(char*) * (ft_wordcount(s, c) + 1))))
+	mem = malloc(sizeof(char *) * (ft_wordcount(s, c) + 1));
+	if (!s || !mem)
 		return (NULL);
-	i = 0;
-	k = 0;
-	while (i < ft_wordcount(s, c))
+	cnt[0] = 0;
+	cnt[2] = 0;
+	while (cnt[0] < ft_wordcount(s, c))
 	{
-		while (s[k] == c)
-			k++;
-		j = 0;
-		while (s[k + j] != c && s[k + j])
-			j++;
-		if (!(mem[i] = malloc(sizeof(char) * (j + 1))))
+		while (s[cnt[2]] == c)
+			cnt[2]++;
+		cnt[1] = 0;
+		while (s[cnt[2] + cnt[1]] != c && s[cnt[2] + cnt[1]])
+			cnt[1]++;
+		mem[cnt[0]] = malloc(sizeof(char) * (cnt[1] + 1));
+		if (!mem[cnt[0]])
 			return (NULL);
-		ft_memcpy(mem[i], s + k, j);
-		mem[i][j] = 0;
-		i++;
-		k += j;
+		ft_memcpy(mem[cnt[0]], s + cnt[2], cnt[1]);
+		mem[cnt[0]++][cnt[1]] = 0;
+		cnt[2] += cnt[1];
 	}
-	mem[i] = NULL;
+	mem[cnt[0]] = NULL;
 	return (mem);
 }

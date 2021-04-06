@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_wordcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpizarro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 14:29:07 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/01/30 21:13:24 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 18:49:49 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 size_t	ft_wordcount(const char *s, char c)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (*s)

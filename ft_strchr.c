@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpizarro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 15:08:51 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/02/03 21:09:37 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 18:48:43 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 		if (*s++ == (char)c)
-			return ((char*)--s);
+			return ((char *)--s);
 	if (!c)
-		return ((char*)s);
+		return ((char *)s);
 	return (0);
 }

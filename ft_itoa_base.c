@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/30 18:56:24 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/06/01 02:44:41 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 20:10:00 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,16 @@ char	*ft_itoa_base(int n, char *base)
 {
 	char		ret[34];
 	short int	i;
-	short int	neg;
 	int			bsize;
 
-	if (!base || (bsize = ft_strlen(base)) < 2)
+	bsize = ft_strlen(base);
+	if (!base || bsize < 2)
 		return ("Error, no valid base to transform 'n'");
 	i = 33;
-	ret[i] = 0;
+	ft_bzero(ret, 34 * sizeof(char));
 	if (n < 0)
 	{
-		neg = 1;
+		ret[0] = '-';
 		ret[--i] = base[-(n % bsize)];
 		n = -(n / bsize);
 	}
@@ -41,7 +41,7 @@ char	*ft_itoa_base(int n, char *base)
 		ret[--i] = base[n % bsize];
 		n /= bsize;
 	}
-	if (neg == 1)
+	if (ret[0] == '-')
 		ret[--i] = '-';
 	else if (i == 33)
 		ret[--i] = '0';

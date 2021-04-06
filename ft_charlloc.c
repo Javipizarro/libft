@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/02 06:08:15 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/07/02 06:37:53 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 20:56:39 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,10 @@
 
 void	*ft_charlloc(size_t len, char c)
 {
-	void *s;
+	void	*s;
 
-	if (!(s = malloc(len + 1)))
+	s = malloc(len + 1);
+	if (!s)
 		return (NULL);
 	ft_bchar(s, len, c);
 	return (s);

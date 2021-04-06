@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpizarro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 18:23:41 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/02/01 02:55:06 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 20:55:42 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	const unsigned char *s;
+	const unsigned char	*s;
 	unsigned char		*d;
 
 	s = src;

@@ -6,7 +6,7 @@
 /*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 00:46:27 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/06/07 20:19:27 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 21:13:10 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,14 @@
 **	or 0 if 'c' is not found.
 */
 
-int		ft_charpos(char const *s, char c)
+int	ft_charpos(char const *s, char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i] && s[i] != c)
 		i++;
-	return (s[i] ? ++i : 0);
+	if (s[i])
+		return (++i);
+	return (0);
 }

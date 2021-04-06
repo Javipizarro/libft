@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpizarro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 15:06:43 by jpizarro          #+#    #+#             */
-/*   Updated: 2020/02/02 16:40:12 by jpizarro         ###   ########.fr       */
+/*   Updated: 2021/04/05 21:20:00 by jpizarro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 **	character tests true.
 */
 
-int		ft_isspace(int c)
+int	ft_isspace(int c)
 {
-	return (c == ' ' || c == '\f' || c == '\n' ||
-			c == '\r' || c == '\t' || c == '\v');
+	return (c == ' ' || c == '\f' || c == '\n'
+		|| c == '\r' || c == '\t' || c == '\v');
 }
