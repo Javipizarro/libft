@@ -1,0 +1,54 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/jpizarro/Programming/42/libft'
+gcc -Wall -Werror -Wextra -c ft_atoi.c -o ft_atoi.o
+gcc -Wall -Werror -Wextra -c ft_bchar.c -o ft_bchar.o
+gcc -Wall -Werror -Wextra -c ft_bzero.c -o ft_bzero.o
+gcc -Wall -Werror -Wextra -c ft_calloc.c -o ft_calloc.o
+gcc -Wall -Werror -Wextra -c ft_charindex.c -o ft_charindex.o
+gcc -Wall -Werror -Wextra -c ft_charlloc.c -o ft_charlloc.o
+gcc -Wall -Werror -Wextra -c ft_charpos.c -o ft_charpos.o
+gcc -Wall -Werror -Wextra -c ft_isalnum.c -o ft_isalnum.o
+gcc -Wall -Werror -Wextra -c ft_isalpha.c -o ft_isalpha.o
+gcc -Wall -Werror -Wextra -c ft_isascii.c -o ft_isascii.o
+gcc -Wall -Werror -Wextra -c ft_isdigit.c -o ft_isdigit.o
+gcc -Wall -Werror -Wextra -c ft_islower.c -o ft_islower.o
+gcc -Wall -Werror -Wextra -c ft_isprint.c -o ft_isprint.o
+gcc -Wall -Werror -Wextra -c ft_isspace.c -o ft_isspace.o
+gcc -Wall -Werror -Wextra -c ft_isupper.c -o ft_isupper.o
+gcc -Wall -Werror -Wextra -c ft_itoa.c -o ft_itoa.o
+gcc -Wall -Werror -Wextra -c ft_itoa_base.c -o ft_itoa_base.o
+gcc -Wall -Werror -Wextra -c ft_litoa_base.c -o ft_litoa_base.o
+gcc -Wall -Werror -Wextra -c ft_memccpy.c -o ft_memccpy.o
+gcc -Wall -Werror -Wextra -c ft_memchr.c -o ft_memchr.o
+gcc -Wall -Werror -Wextra -c ft_memcmp.c -o ft_memcmp.o
+gcc -Wall -Werror -Wextra -c ft_memcpy.c -o ft_memcpy.o
+gcc -Wall -Werror -Wextra -c ft_memmove.c -o ft_memmove.o
+gcc -Wall -Werror -Wextra -c ft_memset.c -o ft_memset.o
+gcc -Wall -Werror -Wextra -c ft_putchar.c -o ft_putchar.o
+gcc -Wall -Werror -Wextra -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc -Wall -Werror -Wextra -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc -Wall -Werror -Wextra -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+gcc -Wall -Werror -Wextra -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc -Wall -Werror -Wextra -c ft_sjofree.c -o ft_sjofree.o
+gcc -Wall -Werror -Wextra -c ft_split.c -o ft_split.o
+gcc -Wall -Werror -Wextra -c ft_strchr.c -o ft_strchr.o
+gcc -Wall -Werror -Wextra -c ft_strdup.c -o ft_strdup.o
+gcc -Wall -Werror -Wextra -c ft_strjoin.c -o ft_strjoin.o
+gcc -Wall -Werror -Wextra -c ft_strlcat.c -o ft_strlcat.o
+gcc -Wall -Werror -Wextra -c ft_strlcpy.c -o ft_strlcpy.o
+gcc -Wall -Werror -Wextra -c ft_strlen.c -o ft_strlen.o
+gcc -Wall -Werror -Wextra -c ft_strmapi.c -o ft_strmapi.o
+gcc -Wall -Werror -Wextra -c ft_strncmp.c -o ft_strncmp.o
+gcc -Wall -Werror -Wextra -c ft_strnewline.c -o ft_strnewline.o
+gcc -Wall -Werror -Wextra -c ft_strnlen.c -o ft_strnlen.o
+gcc -Wall -Werror -Wextra -c ft_strnstr.c -o ft_strnstr.o
+gcc -Wall -Werror -Wextra -c ft_strrchr.c -o ft_strrchr.o
+gcc -Wall -Werror -Wextra -c ft_strtrim.c -o ft_strtrim.o
+gcc -Wall -Werror -Wextra -c ft_substr.c -o ft_substr.o
+gcc -Wall -Werror -Wextra -c ft_tolower.c -o ft_tolower.o
+gcc -Wall -Werror -Wextra -c ft_toupper.c -o ft_toupper.o
+gcc -Wall -Werror -Wextra -c ft_uitoa.c -o ft_uitoa.o
+gcc -Wall -Werror -Wextra -c ft_wordcount.c -o ft_wordcount.o
+ar -rcs libft.a ft_atoi.o ft_bchar.o ft_bzero.o ft_calloc.o ft_charindex.o ft_charlloc.o ft_charpos.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_islower.o ft_isprint.o ft_isspace.o ft_isupper.o ft_itoa.o ft_itoa_base.o ft_litoa_base.o ft_memccpy.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_putchar.o ft_putchar_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_putstr_fd.o ft_sjofree.o ft_split.o ft_strchr.o ft_strdup.o ft_strjoin.o ft_strlcat.o ft_strlcpy.o ft_strlcpy.o ft_strlen.o ft_strmapi.o ft_strncmp.o ft_strnewline.o ft_strnlen.o ft_strnstr.o ft_strrchr.o ft_strtrim.o ft_substr.o ft_tolower.o ft_toupper.o ft_uitoa.o ft_wordcount.o
+make: Leaving directory `/Users/jpizarro/Programming/42/libft'
+ 
