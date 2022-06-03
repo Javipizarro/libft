@@ -6,7 +6,7 @@
 #    By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/29 13:43:23 by jpizarro          #+#    #+#              #
-#    Updated: 2022/06/03 10:53:42 by jpizarro         ###   ########.fr        #
+#    Updated: 2022/06/03 16:57:29 by jpizarro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCS =																	\
 	ft_charindex.c														\
 	ft_charlloc.c														\
 	ft_charpos.c														\
+	ft_free_split.c														\
 	ft_isalnum.c														\
 	ft_isalpha.c														\
 	ft_isascii.c														\
