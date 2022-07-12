@@ -6,7 +6,7 @@
 #    By: jpizarro <jpizarro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/29 13:43:23 by jpizarro          #+#    #+#              #
-#    Updated: 2022/06/03 16:57:29 by jpizarro         ###   ########.fr        #
+#    Updated: 2022/07/12 17:51:05 by jpizarro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ SRCS =																	\
 	ft_putendl_fd.c														\
 	ft_putnbr_fd.c														\
 	ft_putstr_fd.c														\
+	ft_realloc.cd														\
 	ft_sjofree.c														\
 	ft_split.c															\
 	ft_strchr.c															\
